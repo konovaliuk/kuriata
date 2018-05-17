@@ -27,7 +27,6 @@ public class MySQLDAOFactory implements IDAOFactory {
 
     @Override
     public ICompleteTestsDAO getCompleteTestsDAO(WrappedConnection wrappedConnection) {
-        //ToDo: change method
-        throw new UnsupportedOperationException();
+        return new CompleteTestsDAO(wrappedConnection);
     }
 }

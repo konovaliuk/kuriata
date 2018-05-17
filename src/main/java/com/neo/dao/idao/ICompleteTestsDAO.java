@@ -14,5 +14,5 @@ public interface ICompleteTestsDAO extends IDAO<CompleteTest> {
 //
 //    void deleteAllCompletedTestsByStudent(Student student) throws DAOException;
 //
-    List<CompleteTest> findAllCompletedTestsByStudent(Student student) throws DAOException;
+    List<CompleteTest> findAllCompletedTestsByStudent(int studentId) throws DAOException;
 }

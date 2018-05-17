@@ -52,12 +52,11 @@ public class StudentService implements IStudentService{
         }
     }
 
-    @Override
-    public List<CompleteTest> getStudentCompletedTests(Student student) throws ServiceException {
+    public List<CompleteTest> getStudentCompletedTests(int studentId) throws ServiceException {
         try{
-            return iCompleteTestsDAO.findAllCompletedTestsByStudent(student);
+            return iCompleteTestsDAO.findAllCompletedTestsByStudent(studentId);
         } catch (DAOException e){
-            throw new ServiceException("Cant extract all completed tests by student=" + student + " from DB.", e);
+            throw new ServiceException("Cant extract all completed tests by student with id =" + studentId + " from DB.", e);
         }
     }
 

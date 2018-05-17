@@ -22,7 +22,6 @@ public class QuestionService implements IQuestionService {
         } catch (DAOException e) {
             throw new ServiceException("Cant extract all questions from DB.", e);
         }
-
     }
 
     @Override

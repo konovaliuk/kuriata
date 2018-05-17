@@ -16,7 +16,7 @@ public interface IStudentService extends IService {
 
     Student loginStudent(String email) throws ServiceException;
 
-    List<CompleteTest> getStudentCompletedTests(Student student) throws ServiceException;
+    List<CompleteTest> getStudentCompletedTests(int studentId) throws ServiceException;
 
     int addStudent(Student student) throws ServiceException;
 
